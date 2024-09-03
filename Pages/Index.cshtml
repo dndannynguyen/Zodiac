@@ -4,7 +4,20 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center" style="background: linear-gradient(to right, #ff7e5f, #feb47b);">
+    <form>
+        <label for="birthyear"><strong>Enter Your Birth year:</strong></label>
+        <br>
+        <input 
+            type="number" 
+            id="birthyear" 
+            name="birthyear" 
+            placeholder="Enter your birth year" 
+            min="1900" 
+            max="2025" 
+            required
+        >
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 </div>
